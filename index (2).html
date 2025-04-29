@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rouse Masajes | Bienestar y Relajación</title>
+  <meta name="description" content="Reserva masajes relajantes, descontracturantes y deportivos con Rouse en Oropesa del Mar. +4 años de experiencia. ¡Bienestar garantizado!" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rouse Masajes | Bienestar y Relajación" />
+  <meta property="og:description" content="Masajes profesionales con Rouse. Reserva online y vive el arte del bienestar." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Rouse+Masajes" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Fuentes y AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    :root {
+      --bg: #D7BFAE;
+      --surface: #F5E8E0;
+      --accent: #7D4C3C;
+      --text: #3E2A24;
+      --muted: #5C4033;
+      --radius: 8px;
+      --transition: 0.3s ease;
+    }
+    html, body { margin:0; padding:0; overflow-x:hidden; font-family:'Poppins',sans-serif; background:var(--bg); color:var(--text); }
+    *, *::before, *::after { box-sizing:border-box; }
+    .container { max-width:1000px; margin:0 auto; padding:0 1rem; }
+    header { background:var(--surface); position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .header-container { display:flex; align-items:center; justify-content:space-between; height:4rem; }
+    .logo { font-family:'Lora',serif; font-size:1.75rem; color:var(--accent); }
+    nav ul { list-style:none; display:flex; gap:1rem; }
+    nav a { color:var(--muted); text-decoration:none; font-weight:500; transition:color var(--transition); }
+    nav a:hover { color:var(--accent); }
+    .hero { position:relative; text-align:center; padding:6rem 0; }
+    .hero-bg { position:absolute; top:0; left:0; width:100%; height:100%; background:url('https://via.placeholder.com/1200x800?text=Spa+Serenity') center/cover no-repeat; filter:brightness(0.4); z-index:0; }
+    .hero-content { position:relative; z-index:1; }
+    .hero h2 { font-family:'Lora',serif; font-size:2.75rem; margin-bottom:1rem; color:#fff; animation:fadeIn 1s forwards; opacity:0; }
+    .hero p { font-size:1.125rem; color:#fff; margin-bottom:2rem; animation:fadeIn 1s 0.5s forwards; opacity:0; }
+    .btn-primary { background:var(--accent); color:#fff; padding:0.75rem 2rem; border:none; border-radius:var(--radius); cursor:pointer; animation:fadeIn 1s 1s forwards; opacity:0; transition:transform var(--transition); }
+    .btn-primary:hover { transform:translateY(-2px); }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    section { padding:4rem 0; }
+    .section-heading { font-family:'Lora',serif; font-size:2rem; color:var(--accent); text-align:center; margin-bottom:1.5rem; }
+    .section p, .section ul { text-align:center; color:var(--muted); margin-bottom:2rem; }
+    .bg-light { background:var(--surface); border-radius:var(--radius); box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    .services-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .service-card { background:var(--surface); padding:1.5rem; border-radius:var(--radius); text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform var(--transition),box-shadow var(--transition); }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 8px 24px rgba(0,0,0,0.15); }
+    .service-card h3 { font-family:'Lora',serif; color:var(--accent); margin-bottom:0.5rem; }
+    .service-card p { color:var(--muted); font-size:0.95rem; }
+    .pricing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; max-width:800px; margin:0 auto; }
+    .card { background:var(--surface); padding:1.5rem; border-radius:var(--radius); text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    .card h3 { font-family:'Lora',serif; color:var(--accent); margin-bottom:0.5rem; }
+    .card p { color:var(--muted); font-size:1.125rem; }
+    form { max-width:400px; margin:0 auto; }
+    .form-group { margin-bottom:1rem; }
+    label { display:block; margin-bottom:0.5rem; color:var(--muted); }
+    select, input[type=date] { width:100%; padding:0.75rem; border:1px solid #ddd; border-radius:var(--radius); font-size:1rem; }
+    button[type=submit] { width:100%; padding:0.75rem; background:var(--accent); color:#fff; border:none; border-radius:var(--radius); font-size:1rem; cursor:pointer; }
+    footer { background:var(--surface); text-align:center; padding:2rem 0; color:var(--muted); font-size:0.875rem; }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <div class="container header-container">
+      <div class="logo">Rouse Masajes</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#pricing">Precios</a></li>
+          <li><a href="#contact">Reserva</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content container">
+        <h2 data-aos="fade-in">Descubre el Placer de Cuidarte</h2>
+        <p data-aos="fade-in" data-aos-delay="500">Vive un momento único de relajación y renovación total con Rouse.</p>
+        <button class="btn-primary" onclick="scrollToSection('#contact')" data-aos="fade-in" data-aos-delay="1000">Reserva ahora</button>
+      </div>
+    </section>
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Sobre Rouse</h2>
+        <p>+4 años de experiencia ofreciendo masajes terapéuticos y relajantes, con técnicas avanzadas y un trato personalizado.</p>
+      </div>
+    </section>
+    <section id="services" class="section bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Nuestros Servicios</h2>
+        <div class="services-list">
+          <div class="service-card" data-aos="zoom-in"><h3>Masaje Relajante</h3><p>Calma estrés y tensión con movimientos suaves.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="100"><h3>Tejido Profundo</h3><p>Alivio de contracturas intensas.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="200"><h3>Drenaje Linfático</h3><p>Desintoxicante para tu cuerpo.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="300"><h3>Masaje Deportivo</h3><p>Recupera energía y rendimiento.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="400"><h3>Piernas Cansadas</h3><p>Ligereza inmediata en tus piernas.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="500"><h3>Masaje Reductor</h3><p>Define tu figura con técnica experta.</p></div>
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="600"><h3>Anticelulítico</h3><p>Piel más firme y tonificada.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-heading" data-aos="fade-up">Inversiones en Tu Bienestar</h2>
+        <div class="pricing-grid">
+          <div class="card" data-aos="fade-up"><h3>50 minutos</h3><p>€30</p></div>
+          <div class="card" data-aos="fade-up" data-aos-delay="100"><h3>90 minutos</h3><p>€60</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Agenda tu Sesión</h2>
+        <form id="booking-form" data-aos="fade-up">
+          <div class="form-group"><label for="massage-type">Servicio</label><select id="massage-type" required><option value="Masaje Relajante">Masaje Relajante</option><option value="Tejido Profundo">Masaje de Tejido Profundo</option><option value="Drenaje Linfático">Drenaje Linfático</option><option value="Masaje Deportivo">Masaje Deportivo</option><option value="Piernas Cansadas">Piernas Cansadas</option><option value="Masaje Reductor">Masaje Reductor</option><option value="Anticelulítico">Masaje Anticelulítico</option></select></div>
+          <div class="form-group"><label for="duration">Duración</label><select id="duration" required><option value="50 minutos">50 minutos</option><option value="90 minutos">90 minutos</option></select></div>
+          <div class="form-group"><label for="massage-date">Fecha</label><input type="date" id="massage-date" required /></div>
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">&copy; 2025 Rouse Masajes</div></footer>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+n    const dateInput=document.getElementById('massage-date');
+n    const today=new Date().toISOString().split('T')[0];
+n    const maxDate=new Date();
+n    maxDate.setMonth(maxDate.getMonth()+2);
+n    dateInput.min=today;
+n    dateInput.max=maxDate.toISOString().split('T')[0];
+n    AOS.init({duration:800,once:true});});
+    const whatsappNumber='34617145197';
+    function scrollToSection(id){document.querySelector(id).scrollIntoView({behavior:'smooth'});}
+    document.getElementById('booking-form').addEventListener('submit',e=>{e.preventDefault();const type=document.getElementById('massage-type').value;const duration=document.getElementById('duration').value;const date=document.getElementById('massage-date').value;const msg=`Hola, vengo de Rouse Masajes. Quisiera ${type} (${duration}) para el ${date}. ¿Qué hora tienen?`;window.location.href=`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;});
+  </script>
+</body>
+</html>
